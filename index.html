@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhaj Shaikh - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LEFT SIDE -->
+<div class="left-content">
+  <div class="left-top">
+    <h1>MINHAJ SHAIKH</h1>
+    <h2>Software Engineer</h2>
+    
+    <nav class="navigation">
+      <a href="#about" class="nav-link active">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#education" class="nav-link">Education</a>
+        <a href="Minhaj_Shaikh_Resume.pdf" download class="nav-link">Download Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+  </div>
+  
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right-content">
+    <div class="theme-toggle">
+        <button id="themeBtn" onclick="toggleTheme()" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+        <span id="themeText">Dark</span>
+        </button>
+    </div>
+  
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <p class="about-text">
+    I’m a software engineer with a strong focus on backend development, building scalable systems and APIs that solve real-world problems.Over the past couple of years, I’ve worked extensively with Python and frameworks like Django,Flask, and FastAPI to design RESTful services,integrate third-party systems, and optimize application performance.I enjoy working close to the core of an application — data, logic, and system behavior.
+    </p>
+    
+    <p class="about-text">
+      My experience includes developing production-ready APIs, improving database efficiency, and deploying applications using containerized environments.I’ve also worked on projects involving IoT integrations and automation, which helped me understand how software behaves beyond just code..
+    </p>
+
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3><i class="fas fa-code"></i> Programming & Frameworks</h3>
+        <div class="skill-list">
+          <span class="skill-item">Python</span>
+          <span class="skill-item">Django</span>
+          <span class="skill-item">Flask</span>
+          <span class="skill-item">FastAPI</span>
+          <span class="skill-item">DRF</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">Angular</span>
+          <span class="skill-item">HTML/CSS</span>
+          <span class="skill-item">PyQt5</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3><i class="fas fa-database"></i> Databases & ORM</h3>
+        <div class="skill-list">
+          <span class="skill-item">MySQL</span>
+          <span class="skill-item">PostgreSQL</span>
+          <span class="skill-item">SQLAlchemy</span>
+          <span class="skill-item">Alembic</span>
+          <span class="skill-item">Pandas</span>
+          <span class="skill-item">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3><i class="fas fa-robot"></i> AI & Tools</h3>
+        <div class="skill-list">
+          <span class="skill-item">OpenAI API</span>
+          <span class="skill-item">Gen AI</span>
+          <span class="skill-item">Prompt Engineering</span>
+          <span class="skill-item">ChatGPT</span>
+          <span class="skill-item">GitHub Copilot</span>
+          <span class="skill-item">Perplexity</span>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <h3><i class="fas fa-server"></i> DevOps & Deployment</h3>
+        <div class="skill-list">
+          <span class="skill-item">Docker</span>
+          <span class="skill-item">Linux</span>
+          <span class="skill-item">Nginx</span>
+          <span class="skill-item">Gunicorn</span>
+          <span class="skill-item">AWS</span>
+          <span class="skill-item">Git</span>
+          <span class="skill-item">GitHub</span>
+          <span class="skill-item">Jira</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="experience-list">
+      
+      <!-- Point Pi -->
+      <div class="experience-card" onclick="toggleExperience(this)">
+        <div class="experience-header">
+          <div class="experience-title-group">
+            <h3>Software Engineer</h3>
+            <span class="experience-company">@ Point Pi</span>
+          </div>
+          <div class="experience-meta">
+            <span class="experience-date">Jul 2023 — Jul 2025</span>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+        </div>
+        <div class="experience-details">
+          <ul class="experience-list-ul">
+            <li> 
+                I began my role working across the full stack, contributing to both frontend interfaces and backend services to understand the complete flow of an application.This early exposure helped me collaborate closely with frontend teams and design APIs that aligned well with real user interactions.
+            </li>
+            <li>
+                Over time, my responsibilities shifted more toward backend development,where I focused on building and maintaining RESTful APIs using Python-basedframeworks. I worked on optimizing application logic, improving database queries, and ensuring API performance and reliability in production environments.
+            </li>
+            <li>    
+                A significant part of my work involved integrating smart home devices into the system using the Z-Wave protocol and enabling real-time communication through MQTT. I handled device interactions, data flow, and error handling to ensure stable and low-latency communication between services and hardware.
+            </li>
+          </ul>
+      
+        </div>
+      </div>
+
+      <!-- Mission Awareness Foundation -->
+      <div class="experience-card" onclick="toggleExperience(this)">
+        <div class="experience-header">
+          <div class="experience-title-group">
+            <h3>Member</h3>
+            <span class="experience-company">@ Mission Awareness Foundation</span>
+          </div>
+          <div class="experience-meta">
+            <span class="experience-date">2022 — Present</span>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+        </div>
+        <div class="experience-details">
+          <ul class="experience-list-ul">
+            <li>Supporting students and educators through scholarships, resources, and mentorship programs</li>
+            <li>Bridging opportunity gaps for underserved communities, enhancing digital education and skill development</li>
+            <li>Networking mentors and alumni to guide and inspire future generations</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-home"></i></div>
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">Z Flask Wave</h3>
+        <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">MQTT</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">RESTful API</span>
+          </div>
+        </ul>
+
+        <p class="project-description">
+        This project focused on building a backend system that connects and manages smart home devices in real time. I worked on integrating device communication protocols and ensuring smooth data flow between services. Special attention was given to handling device states, failures, and response timing.
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">Bridging Education System</h3>
+                <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">API</span>
+          </div>
+        </ul>
+
+        <p class="project-description">
+            This project focused on building a scholarship application system for students. The application allows students to submit academic details along with tuition and maintenance fee information. I worked on backend logic to handle form submissions, validations, and secure data storage. The goal was to simplify scholarship data collection and improve accessibility for students.
+        </p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">FastAPI Utilities</h3>
+        <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">System Design</span>
+            <span class="tech-tag">LLD</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Middleware</span>
+          </div>
+        </ul>
+        <p class="project-description">
+            This was a small backend-focused project aimed at understanding system design concepts. I built a URL shortener service with efficient request handling and data mapping. Alongside this, I implemented rate limiting in a Flask application using middleware. The project helped me explore scalability, request control, and backend design patterns.
+        </p>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">Django News Automation</h3>
+        <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">News API</span>
+            <span class="tech-tag">Celery</span>
+            <span class="tech-tag">Gmail</span>
+          </div>
+        </ul>
+        <p class="project-description">
+          This project involved creating an automated news delivery system using Django. I integrated an external news API and used Celery to process background tasks asynchronously. News updates were sent to users via email using SMTP, handled by Django workers. The system was designed to run independently without blocking the main application flow.
+        </p>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">Smart Survey Platform</h3>
+        <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Html & CSS</span>
+          </div>
+        </ul>
+        <p class="project-description">
+            This full-stack project included user registration, login, and access to a dashboard. Users could create custom survey forms by adding questions and sharing a preview link. Submitted responses were processed and visualized using Matplotlib. The project combined backend logic, user flow design, and data visualization.
+        </p>
+        </div>
+
+              <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-robot"></i></div>
+          <div class="project-links">
+          </div>
+        </div>
+        <h3 class="project-title">GenAI Studio</h3>
+        <ul class="project-highlights">
+          <div class="tech-stack">
+            <span class="tech-tag">GenAI</span>
+            <span class="tech-tag">OpenAPI</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Prompt Engineering</span>
+          </div>
+        </ul>
+
+        <p class="project-description">
+            GenAI Studio was built to explore how AI features can be integrated into real applications. I worked on connecting AI services to generate meaningful text and images outputs. The project involved experimenting with prompts and managing responses efficiently. It helped me understand how AI systems behave in live environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION -->
+      <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Achievements & Certificates</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-top">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+        </div>
+        <div class="achievement-title">Building Generative AI-powered apps with Python</div>
+        <div class="project-links">
+            <a href="https://www.mygreatlearning.com/certificate/TLKVTJTQ?referrer_code=GLUPC6U5UWNPE"><i class="fas fa-external-link-alt"></i>          
+                <span class="achievement-provider">Great Learning</span>
+            </a>
+        </div>
+
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-top">
+          <div class="achievement-icon"><i class="fas fa-database"></i></div>
+        </div>
+        <div class="achievement-title">SQL Certification</div>
+        <div class="project-links">
+            <a href="https://www.testdome.com/certificates/1a63427de46d4adfabddbe6fc0d143ac"><i class="fas fa-external-link-alt"></i>          
+                <span class="achievement-provider">SQL</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-top">
+          <div class="achievement-icon"><i class="fab fa-python"></i></div>
+        </div>
+        <div class="achievement-title">Django Development</div>
+        <div class="project-links">
+            <a href="https://cutshort.io/certificate/83425"><i class="fas fa-external-link-alt"></i>          
+                <span class="achievement-provider">Django</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-top">
+          <div class="achievement-icon"><i class="fab fa-js"></i></div>
+        </div>
+        <div class="achievement-title">SuperSimpleDev</div>
+                <div class="project-links">
+            <a href="https://courses.supersimple.dev/certificates/zbtcbbyzm7"><i class="fas fa-external-link-alt"></i>          
+                <span class="achievement-provider">JavaScript</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-degree">Bachelor of Computer Applications (BCA)</span>
+        <span class="edu-year">2017 — 2020</span>
+      </div>
+      <div class="edu-school">Sangai International University</div>
+      <div class="edu-grade">CGPA: 6.8</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-degree">Higher Secondary Certificate (HSC)</span>
+        <span class="edu-year">2015 — 2027</span>
+      </div>
+      <div class="edu-school">Maharashtra State Board (Science)</div>
+      <div class="edu-grade">CGPA: 7.0</div>
+    </div>
+
+    <div class="edu-item" style="border-bottom: none;">
+      <div class="edu-header">
+        <span class="edu-degree">Secondary School Certificate (SSC)</span>
+        <span class="edu-year">2014 — 2015</span>
+      </div>
+      <div class="edu-school">Maharashtra State Board</div>
+      <div class="edu-grade">CGPA: 8.0</div>
+    </div>
+  </section>
+
+
+    <!-- CONTACT / FOOTER SECTION -->
+     <section id="contact" class="section">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgwllyw" method="POST">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+        </button>
+        <div id="formStatus" class="form-status"></div>
+        </form>
+
+<div class="footer-bottom">
+    <div class="copyright">
+      <p>&copy; <span id="year"></span> Minhaj Shaikh. All rights reserved.</p>
+      <p>Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+    </div>
+        <div class="footer-social">
+          <a href="https://github.com/Minhajshaikh321" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/minhaj-sk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:shaikhminhaj8850@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+    </section>  
+</div>
+</div>
+
+<div class="cursor-glow" id="cursor"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
